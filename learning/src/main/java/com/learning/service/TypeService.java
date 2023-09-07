@@ -15,7 +15,7 @@ public class TypeService {
 	
 	public Type saveType (Type type) {
 		if (type.getName()==null)
-			throw new RuntimeException("No se puede agregar este nombre");
+			throw new RuntimeException("No se puede agregar este nombre!");
 		return repository.save(type);
 	}
 	
